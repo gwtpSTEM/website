@@ -251,6 +251,19 @@ export default ({ data }) => (
     </div>
     {/* past-programs */}
 
+    {/* news-list */}
+  <div class="container py-5">
+  <h1 class="mb-4">In the News</h1>
+    <div class="list-group">
+      {data.allAirtable.nodes.map(node => (
+        
+       <a href={node.data.URL} class="list-group-item list-group-item-action lead" target="_blank" rel="noopener noreferrer">{node.data.Name}<br></br><small>{node.data.Date} | {node.data.Source}</small></a>
+       
+      ))}
+    </div>
+  </div>
+    {/* /news-list */}
+
     {/* footer */}
     <div class="bg-dark py-5" id="contact">
         <div class="container">
