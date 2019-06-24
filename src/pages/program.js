@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from 'gatsby';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/pro-solid-svg-icons'
-import { far } from '@fortawesome/pro-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/pro-solid-svg-icons';
+import { far } from '@fortawesome/pro-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add(fas, far, fab)
 
