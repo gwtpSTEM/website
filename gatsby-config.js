@@ -1,9 +1,31 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+require("dotenv").config()
+
+
 
 module.exports = {
-  /* Your site config here */
+  plugins: [
+    {
+      resolve: "gatsby-source-airtable",
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        tables: [
+          {
+            baseId: "appygUSjvvZHynobq",
+            tableName: "Media Coverage",
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Quicksand`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
+    },
+  ],
 }

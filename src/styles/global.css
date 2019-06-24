@@ -1,0 +1,60 @@
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+:root {
+  --pink: #E45284;
+  --light-pink: #ed8dae;
+  --orange: #ED6363;
+  --light-orange: #F4A0A0;
+  --yellow: #FFC757;
+  --light-yellow: #FFDE9B;
+  --green: #24AD73;
+  --light-green: #3ED796;
+  --blue: #2AABCC;
+  --light-blue: #5CC3DE;
+  --purple: #896AC6;
+  --light-purple: #B09BD9;
+  --dark-gray: #303030;
+  --light-gray: #545454;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
