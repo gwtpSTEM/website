@@ -14,6 +14,7 @@ export default () => (
             <div class="col-lg-6 ml-auto text-white order-lg-2 mb-5">
                 <h2 class="mb-4">Contact Us</h2>
                 <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div class="form-group d-none">
                     <label>Don’t fill this out if you're human:<input name="bot-field" /></label>
                     </div>
