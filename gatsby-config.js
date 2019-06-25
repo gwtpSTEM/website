@@ -13,6 +13,15 @@ module.exports = {
             baseId: "appygUSjvvZHynobq",
             tableName: "Media Coverage",
           },
+          {
+            baseId: "appev7hO7lu4gI2vW",
+            tableName: "Programs",
+            tableLinks: ['Participants'],
+          },
+          {
+            baseId: "appev7hO7lu4gI2vW",
+            tableName: "Master List",
+          },
         ],
       },
     },

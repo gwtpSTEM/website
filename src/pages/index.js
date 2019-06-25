@@ -1,39 +1,30 @@
-import React from "react";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/pro-solid-svg-icons';
-import { far } from '@fortawesome/pro-regular-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-library.add(fas, far, fab)
+import React from "react"
+import Footer from "../components/footer"
 
 export default ({ data }) => (
+
 <div>
 {/* navbar */}
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2 border-bottom">
-      <div class="container">
-          <a class="navbar-brand" href="/" target="_blank"><img src="http://gwtp.us/images/logo_no_url_rev.png" alt="" width="120"></img></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-              <a class="nav-item nav-link mr-2" href="#home">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link mr-2" href="#about">About</a>
-              <a class="nav-item nav-link mr-2" href="#programs">Programs</a>
-              <a class="nav-item nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
-              </div>
-              <form class="form-inline pl-lg-5 mt-2 mt-lg-0">
-                  <button class="btn btn-danger font-weight-bolder" type="button">Donate</button>
-              </form>
-          </div>
-          
-      </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2 border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="/" target="_blank"><img src="gwtp-logo.png" alt="" width="120"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link mr-2" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link mr-2" href="#about">About</a>
+            <a class="nav-item nav-link mr-2" href="#programs">Programs</a>
+            <a class="nav-item nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+            </div>
+            <form class="form-inline pl-lg-5 mt-2 mt-lg-0">
+                <button class="btn btn-danger font-weight-bolder" type="button">Donate</button>
+            </form>
+        </div>
+    </div>
+</nav>
 {/* /navbar */}
-
 {/* alert */}
   <div class="container">
       <div class="row">
@@ -62,7 +53,7 @@ export default ({ data }) => (
   <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade d-none d-md-block" data-ride="carousel">
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="https://source.unsplash.com/2000x600/?raspberries" class="d-block w-100" alt="..."></img>
+              <img src="https://source.unsplash.com/2000x600/?space" class="d-block w-100" alt="..."></img>
               <div class="carousel-caption">
                   <h1 class="display-2">Get with the Program</h1>
                   <p class="lead">Preparing ALL kids for a future in STEM...<br></br>LITTLE kids, BIG opportunity!</p>
@@ -228,45 +219,6 @@ export default ({ data }) => (
       </div>
   </div>
 {/* /quotes */}
-
-{/* footer */}
-  <div class="bg-dark py-5" id="contact">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6 ml-auto text-white order-lg-2 mb-5">
-                  <h2 class="mb-4">Contact Us</h2>
-                  <form action="https://formsubmit.io/send/ec804f6a-9293-4415-b680-5bf83cf40ce9">
-                      <div class="form-group">
-                          <label for="Name" class="sr-only">Your Name</label>
-                          <input type="text" class="form-control" id="Name" placeholder="Your Name"></input>
-                      </div>
-                      <div class="form-group">
-                          <label for="Email" class="sr-only">Your Email</label>
-                          <input type="email" class="form-control" id="Email" placeholder="Your Email"></input>
-                      </div>
-                      <div class="form-group">
-                          <label for="Message" class="sr-only"></label>
-                          <textarea type="text" class="form-control" id="Message" rows="5" placeholder="Message"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-danger">Send</button>
-                  </form>
-              </div>
-              <div class="col-lg-4 text-white order-lg-1">
-                  <div class="flex-column">
-                      <div>
-                        <span class="mr-3"><FontAwesomeIcon icon={['fab', 'facebook']} size="2x"/></span>
-                        <span class="mr-3"><FontAwesomeIcon icon={['fab', 'twitter']} size="2x" /></span>
-                        <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
-                      </div>
-                      <p class="mt-3 pb-3 border-bottom border-white">2019 &copy; Get with the Program, Inc.</p>
-                      <p class="lead">Stay up to date with the latest from Get with the Program!</p>
-                      <a href="" class="btn btn-danger mt-2">Join Our Mailing List</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-{/* /footer */}
+<Footer></Footer>
 </div>
-
 )
