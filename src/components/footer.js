@@ -13,14 +13,17 @@ export default () => (
         <div class="row">
             <div class="col-lg-6 ml-auto text-white order-lg-2 mb-5">
                 <h2 class="mb-4">Contact Us</h2>
-                <form name="contact" netlify>
+                <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
+                    <div class="form-group d-none">
+                    <label>Don’t fill this out if you're human:<input name="bot-field" /></label>
+                    </div>
                     <div class="form-group">
                         <label for="Name" class="sr-only">Your Name</label>
-                        <input type="text" class="form-control" id="Name" placeholder="Your Name"></input>
+                        <input type="text" class="form-control" id="Name" placeholder="Your Name" />
                     </div>
                     <div class="form-group">
                         <label for="Email" class="sr-only">Your Email</label>
-                        <input type="email" class="form-control" id="Email" placeholder="Your Email"></input>
+                        <input type="email" class="form-control" id="Email" placeholder="Your Email" />
                     </div>
                     <div class="form-group">
                         <label for="Message" class="sr-only"></label>
