@@ -1,7 +1,5 @@
 require("dotenv").config()
 
-
-
 module.exports = {
   plugins: [
     {
@@ -14,13 +12,17 @@ module.exports = {
             tableName: "Media Coverage",
           },
           {
-            baseId: "appev7hO7lu4gI2vW",
-            tableName: "Programs",
-            tableLinks: ['Participants'],
+            baseId: "appygUSjvvZHynobq",
+            tableName: "History",
+          },
+          {
+            baseId: "appygUSjvvZHynobq",
+            tableName: "Other",
+            mapping: { 'Text': 'text/markdown' },
           },
           {
             baseId: "appev7hO7lu4gI2vW",
-            tableName: "Master List",
+            tableName: "Programs",
           },
         ],
       },
@@ -36,5 +38,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-remark`,
   ],
 }

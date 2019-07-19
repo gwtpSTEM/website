@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Footer from "../../components/footer"
 import { graphql } from 'gatsby'
 
 
@@ -16,7 +16,7 @@ export const query = graphql`
       }
     }
   }
-  tagline: airtable(data: {Name: {eq: "tagline-en"}}) {
+  tagline: airtable(data: {Name: {eq: "tagline-ja"}}) {
     data {
       Text {
         childMarkdownRemark {
@@ -25,7 +25,7 @@ export const query = graphql`
       }
     }
   }
-  alert: airtable(data: {Name: {eq: "alert-en"}}) {
+  alert: airtable(data: {Name: {eq: "alert-ja"}}) {
     data {
       Text {
         childMarkdownRemark {
@@ -40,13 +40,33 @@ export const query = graphql`
 export default ({ data }) => (
 
 <div>
-<Layout>
+{/* navbar */}
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2 border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="/" target="_blank"><img src="gwtp-logo.png" alt="" width="120"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link mr-2" href="#sshome">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link mr-2" href="#ssabout">About</a>
+            <a class="nav-item nav-link mr-2" href="#ssprograms">Programs</a>
+            <a class="nav-item nav-link" href="#sscontact" tabindex="-1" aria-disabled="true">Contact</a>
+            </div>
+            <form class="form-inline pl-lg-5 mt-2 mt-lg-0">
+              <a href="http://store.gwtp.us/" class="btn btn-danger font-weight-bolder" target="_blank" rel="noopener noreferrer">Donate</a>
+            </form>
+        </div>
+    </div>
+</nav>
+{/* /navbar */}
 {/* alert */}
   <div class="container">
       <div class="row">
-          <div class="col-lg-9 mx-auto">
+          <div class="col-lg-7 mx-auto">
               <div class="alert alert-danger alert-dismissible fade show my-3" role="alert">
-                  <strong>Hurry!</strong> Summer Camp Session 2 (coding) is starting next week! <a href="#home" target="_blank" class="alert-link">Register now</a>! <span class="badge badge-danger ml-4">2 spots left</span>
+                  <strong>Hurry!</strong> Camp registration ends in two days. <a href="#home" target="_blank" class="alert-link">Register now</a>! <span class="badge badge-danger ml-4">2 spots left</span>
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
@@ -99,7 +119,7 @@ export default ({ data }) => (
         <div class="col-lg-5 mb-3">
           <h2 class="mb-4 h1 text-white">Announcement</h2>
           <div class="card">
-            <img src="https://source.unsplash.com/collection/7008843/500x300" class="card-img-top img-fluid" alt="..." />
+            <img src="https://source.unsplash.com/500x300/?robot" class="card-img-top img-fluid" alt="..." />
             <div class="card-body">
             <h5 class="card-title">Upcoming Camps</h5>
             <p class="card-text">July 8–12: Build Your Own Robot<br />July 22–26: Coding Camp<br />August 12–16: Remote Control Car DIY<br /><small class="text-danger font-weight-bold">9:30 a.m. to 4 p.m. (Add-on option until 5 p.m. is available)</small></p>
@@ -220,7 +240,7 @@ export default ({ data }) => (
           <h2 class="mb-5 h1" id="ssprograms">Programs</h2>
           <div class="row">
               <div class="col-md-9 mx-auto col-xl mb-5">
-                  <img src="https://source.unsplash.com/collection/7019254/600x400" alt="xxx" class="rounded img-fluid"></img>
+                  <img src="https://source.unsplash.com/600x400/?chemistry" alt="xxx" class="rounded img-fluid"></img>
                   <h3 class="mt-4">
                       Brain Camp
                   </h3>
@@ -271,6 +291,6 @@ export default ({ data }) => (
       </div>
   </div>
 {/* /quotes */}
-</Layout>
+<Footer></Footer>
 </div>
 )

@@ -12,8 +12,10 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        {/* Font Awesome Pro */}
+        <script src="https://kit.fontawesome.com/7c94aeb9c6.js"></script>
       </head>
-      <body id="home" data-spy="scroll" data-target=".navbar" data-offset="120">
+      <body id="sshome" data-spy="scroll" data-target=".navbar">
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.

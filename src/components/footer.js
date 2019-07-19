@@ -1,18 +1,11 @@
 import React from "react"
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/pro-solid-svg-icons'
-import { far } from '@fortawesome/pro-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-library.add(fas, far, fab)
 
 export default () => (
-<div class="bg-dark py-5" id="contact">
+<div class="bg-dark py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 ml-auto text-white order-lg-2 mb-5">
-                <h2 class="mb-4">Contact Us</h2>
+                <h2 class="mb-4" id="sscontact">Contact Us</h2>
                 <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <div class="form-group d-none">
@@ -35,14 +28,15 @@ export default () => (
             </div>
             <div class="col-lg-4 text-white order-lg-1">
                 <div class="flex-column">
-                    <div>
-                    <span class="mr-3"><FontAwesomeIcon icon={['fab', 'facebook']} size="2x"/></span>
-                    <span class="mr-3"><FontAwesomeIcon icon={['fab', 'twitter']} size="2x" /></span>
-                    <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
+                    <div class="social">
+                        <a href="https://www.facebook.com/gwtpSTEM" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook Page"><i class="fab fa-facebook fa-2x mr-3"></i></a>
+                        <a href="https://twitter.com/gwtpstem" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter"><i class="fab fa-twitter fa-2x mr-3"></i></a>
+                        <a href="https://www.instagram.com/gwtpstem/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
-                    <p class="mt-3 pb-3 border-bottom border-white">2019 &copy; Get with the Program, Inc.</p>
-                    <p class="lead">Stay up to date with the latest from Get with the Program!</p>
-                    <a href="http://eepurl.com/bPGvNr" class="btn btn-danger mt-2" target="_blank" rel="noopener noreferrer">Join Our Mailing List</a>
+                    <p class="lead mt-3">Stay up to date with the latest from Get with the Program!</p>
+                    <a href="http://eepurl.com/bPGvNr" class="btn btn-danger mt-2 mb-3" target="_blank" rel="noopener noreferrer">Join Our Mailing List</a>
+                    <p class="mt-3">2019 &copy; Get with the Program, Inc.</p>
+                    <p class="pt-3 border-top border-white">Website designed and developed by<br />Arisa Williams</p>
                 </div>
             </div>
         </div>
