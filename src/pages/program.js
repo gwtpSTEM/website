@@ -61,17 +61,6 @@ export default ({ data }) => (
 <Layout>
 <div>
 
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0 bg-white pl-0">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item"><a href="/#programs">Programs</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Brain Camp</li>
-            </ol>
-        </nav>
-    </div>
-    
-
     {/* jumbotron */}
     <div class="jumbotron jumbotron-fluid bg-dark text-white mb-0">
         <div class="container text-center py-5">

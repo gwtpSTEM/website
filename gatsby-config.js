@@ -28,15 +28,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Quicksand`,
-            variants: [`400`, `700`]
-          },
+          `Quicksand\:400,700`
         ],
-      },
+        display: 'swap'
+      }
     },
     `gatsby-transformer-remark`,
   ],
