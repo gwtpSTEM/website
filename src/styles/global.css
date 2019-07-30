@@ -1,16 +1,16 @@
 :root {
-  --pink: #E45284;
-  --light-pink: #ed8dae;
-  --orange: #ED6363;
-  --light-orange: #F4A0A0;
-  --yellow: #FFC757;
-  --light-yellow: #FFDE9B;
-  --green: #24AD73;
-  --light-green: #3ED796;
+  --pink: #EA596E;
+  --light-pink: #F295A3;
+  --orange: #FF914D;
+  --light-orange: #FFBB91;
+  --yellow: #FFC54F;
+  --light-yellow: #FFDB93;
+  --green: #13AE6C;
+  --light-green: #1EE691;
   --blue: #2AABCC;
   --light-blue: #5CC3DE;
-  --purple: #896AC6;
-  --light-purple: #B09BD9;
+  --purple: #8962D8;
+  --light-purple: #B298E6;
   --dark-gray: #303030;
   --light-gray: #545454;
 }
@@ -33,9 +33,47 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
   background-size: cover;
 }
 
+.jumbotron.camp {
+  background-image: url('https://source.unsplash.com/collection/7019254/1800x600');
+  background-size: cover;
+}
+
+.jumbotron.academy {
+  background-image: url('https://source.unsplash.com/collection/4255424/1800x600');
+  background-size: cover;
+}
+
+.jumbotron.lab {
+  background-image: url('https://source.unsplash.com/collection/8262090/1800x600');
+  background-size: cover;
+}
+
 h2[id] {
   padding-top: 110px;
   margin-top: -110px;
+}
+
+.bg-pink {
+  background-color: var(--pink);
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.text-green {
+  color: var(--green);
 }
 
 /* white social icons */

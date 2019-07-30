@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
@@ -58,13 +59,14 @@ export const query = graphql`
 `;
   
 export default ({ data }) => (
+<div>
+<Helmet><title>Brain Academy | Get with the Program</title></Helmet>
 <Layout>
 <div>
-
     {/* jumbotron */}
-    <div class="jumbotron jumbotron-fluid bg-dark text-white mb-0">
+    <div class="jumbotron jumbotron-fluid bg-dark text-white mb-0 academy">
         <div class="container text-center py-5">
-            <h1 class="display-2">Brain Camp</h1>
+            <h1 class="display-2">Brain Academy</h1>
         </div>
     </div>
     {/* /jumbotron */}
@@ -88,7 +90,7 @@ export default ({ data }) => (
     {/* /overview */}
 
     {/* past-programs */}
-    <div id="past" class="py-5 bg-secondary">
+    <div id="past" class="py-5 bg-pink">
         <div class="container">
             <h2 class="mb-5 text-white h1">Past Camps</h2>
             <div class="row">
@@ -196,4 +198,5 @@ export default ({ data }) => (
     {/* past-programs */}
 </div>
 </Layout>
+</div>
 )

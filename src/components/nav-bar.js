@@ -12,18 +12,18 @@ export default () => (
             <li class="nav-item active mr-2">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="/history">History</a>
-            </li>
             <li class="nav-item dropdown mr-2">
                 <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Program
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/program">Brain Camp</a>
-                    <a class="dropdown-item" href="/">Brain Academy</a>
-                    <a class="dropdown-item" href="/">Brain Lab</a>
+                    <a class="dropdown-item" href="/camp">Brain Camp</a>
+                    <a class="dropdown-item" href="/academy">Brain Academy</a>
+                    <a class="dropdown-item" href="/lab">Brain Lab</a>
                 </div>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="/history">History</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#sscontact">Contact</a>

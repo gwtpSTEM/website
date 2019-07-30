@@ -1,11 +1,12 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 
 
 export const query = graphql`
 {
-  news: allAirtable(sort: {fields: data___Date, order: DESC}, filter: {data: {Status: {eq: "Published"}}}, limit: 5) {
+  news: allAirtable(sort: {fields: data___Date, order: DESC}, filter: {data: {Status: {eq: "Published"}}}, limit: 6) {
     nodes {
       data {
         Date(formatString: "MMMM D, YYYY")
@@ -40,13 +41,30 @@ export const query = graphql`
 export default ({ data }) => (
 
 <div>
+<Helmet>
+<title>Get with the Program</title>
+<meta name="title" content="Get with the Program: STEM Education in Oberlin, OH" />
+<meta name="description" content="Get with the Program promotes and reinforces STEM literacy among P-12 students." />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.gwtp.us/" />
+<meta property="og:title" content="Get with the Program: STEM Education in Oberlin, OH" />
+<meta property="og:description" content="Get with the Program promotes and reinforces STEM literacy among P-12 students." />
+<meta property="og:image" content="https://www.gwtp.us/og.png" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.gwtp.us/" />
+<meta property="twitter:title" content="Get with the Program: STEM Education in Oberlin, OH" />
+<meta property="twitter:description" content="Get with the Program promotes and reinforces STEM literacy among P-12 students." />
+<meta property="twitter:image" content="https://www.gwtp.us/og.png" />
+</Helmet>
 <Layout>
 {/* alert */}
   <div class="container">
       <div class="row">
           <div class="col-lg-9 mx-auto">
               <div class="alert alert-danger alert-dismissible fade show my-3" role="alert">
-                  <strong>Hurry!</strong> Summer Camp Session 2 (coding) is starting next week! <a href="#home" target="_blank" class="alert-link">Register now</a>! <span class="badge badge-danger ml-4">2 spots left</span>
+                  <strong>Hurry!</strong> Summer Camp Session 3 (RC Car) is starting in two week! <a href="#home" target="_blank" class="alert-link">Register now</a>! <span class="badge badge-danger ml-4">2 spots left</span>
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
@@ -71,7 +89,7 @@ export default ({ data }) => (
   <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade d-none d-xl-block" data-ride="carousel">
       <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://source.unsplash.com/1800x550/?galaxy" class="d-block w-100" alt="..."></img>
+            <img src="https://source.unsplash.com/collection/6882791/1800x550" class="d-block w-100" alt="..."></img>
             <div class="carousel-caption">
                 <h1 class="display-2">Get with the Program</h1>
                 <div class="lead" dangerouslySetInnerHTML={{
@@ -93,7 +111,7 @@ export default ({ data }) => (
 {/* /carousel */}
 
 {/* news */}
-<div class="py-5 bg-dark">
+<div class="py-5 bg-blue">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 mb-3">
@@ -147,7 +165,7 @@ export default ({ data }) => (
   {/* /about */}
 
 {/* founder */}
-  <div class="py-5 bg-secondary">
+  <div class="py-5 bg-green">
       <div class="container">
           <div class="row">
               <figure class="figure col-lg mb-5 mb-lg-0">
@@ -172,12 +190,12 @@ export default ({ data }) => (
 
 {/* team */}
   <div class="container py-5">
-      <h2 class="mb-5 h1" id="team">Our Team</h2>
+      <h2 class="mb-5 h1" id="team">Our Characters</h2>
       <div class="row">
           <div class="col-lg text-center text-dark mb-3">
-              <img src="https://source.unsplash.com/250x250/?portrait" alt="xxx" class="rounded-circle"></img>
+              <img src="amina.png" alt="Amina" class="rounded-circle"></img>
               <h3 class="mt-4">
-                  Jane Doe
+                  Amina
               </h3>
               <p class="font-weight-bold">
                   Professional Title
@@ -187,9 +205,9 @@ export default ({ data }) => (
               </p>
           </div>
           <div class="col-lg text-center text-dark mb-3">
-              <img src="https://source.unsplash.com/250x250/?portrait" alt="xxx" class="rounded-circle"></img>
+              <img src="amir.png" alt="Amir" class="rounded-circle"></img>
               <h3 class="mt-4">
-                  Jane Doe
+                  Amir
               </h3>
               <p class="font-weight-bold">
                   Professional Title
@@ -199,9 +217,9 @@ export default ({ data }) => (
               </p>
           </div>
           <div class="col-lg text-center text-dark">
-              <img src="https://source.unsplash.com/250x250/?portrait" alt="xxx" class="rounded-circle"></img>
+              <img src="anissa.png" alt="Anissa" class="rounded-circle"></img>
               <h3 class="mt-4">
-                  Jane Doe
+                  Anissa
               </h3>
               <p class="font-weight-bold">
                   Professional Title
@@ -215,22 +233,22 @@ export default ({ data }) => (
 {/* /team */}
 
 {/* programs */}
-  <div class="bg-secondary py-5">
+  <div class="bg-purple py-5">
       <div class="container text-white">
           <h2 class="mb-5 h1" id="ssprograms">Programs</h2>
           <div class="row">
               <div class="col-md-9 mx-auto col-xl mb-5">
-                  <img src="https://source.unsplash.com/collection/7019254/600x400" alt="xxx" class="rounded img-fluid"></img>
+                  <img src="https://source.unsplash.com/collection/7019254/600x400" alt="Brain Camp" class="rounded img-fluid"></img>
                   <h3 class="mt-4">
                       Brain Camp
                   </h3>
                   <p class="text-justify">
                   Get with the Program&rsquo;s Brain Camps are year-round, out-of-school learning programs. These camps take place during school in-service days, holidays, and school breaks &#40;spring, summer, winter, etc.&#41;.
                   </p>
-                  <a class="btn btn-primary mt-2" href="program">Learn More</a>
+                  <a class="btn btn-primary mt-2" href="camp">Learn More</a>
               </div>
               <div class="col-md-9 mx-auto col-xl mb-5">
-                  <img src="https://source.unsplash.com/600x400/?classroom" alt="xxx" class="rounded img-fluid"></img>
+                  <img src="https://source.unsplash.com/collection/4255424/600x400" alt="Brain Academy" class="rounded img-fluid"></img>
                   <h3 class="mt-4">
                       Brain Academy
                   </h3>
@@ -240,7 +258,7 @@ export default ({ data }) => (
                   <a class="btn btn-primary mt-2" href="program.html">Learn More</a>
               </div>
               <div class="col-md-9 mx-auto col-xl">
-                  <img src="https://source.unsplash.com/600x400/?studying" alt="xxx" class="rounded img-fluid"></img>
+                  <img src="https://source.unsplash.com/collection/8262090/600x400" alt="Brain Lab" class="rounded img-fluid"></img>
                   <h3 class="mt-4">
                       Brain Lab
                   </h3>
@@ -259,7 +277,7 @@ export default ({ data }) => (
       <h2 class="mb-4 text-dark h1" id="quotes">Testimonials</h2>
       <div class="row">
           <div class="col-lg mb-4">
-              <i class="fas fa-quote-left fa-2x fa-pull-left text-primary"></i>
+              <i class="fas fa-quote-left fa-2x fa-pull-left text-green"></i>
               <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p class="text-dark">&mdash; Jane Doe</p>
           </div>
