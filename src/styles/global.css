@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
 
 .jumbotron.not-found {
   background-image: url('https://source.unsplash.com/collection/6882791/1800x600');
+  background-size: cover;
 }
 
 h2[id] {

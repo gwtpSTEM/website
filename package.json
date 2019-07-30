@@ -17,6 +17,7 @@
     "dotenv": "^8.0.0",
     "gatsby": "^2.13.27",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
     "gatsby-source-airtable": "^2.0.8",
     "gatsby-source-filesystem": "^2.0.38",

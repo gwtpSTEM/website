@@ -36,6 +36,18 @@ module.exports = {
         display: 'swap'
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Get with the Program`,
+        short_name: `Get with the Program`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#37A7DF`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
     `gatsby-transformer-remark`,
   ],
 }
