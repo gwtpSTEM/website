@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Layout from "../components/layout"
+import Layout from "../components/layout-index"
 import { graphql } from 'gatsby'
 
 
@@ -115,7 +115,7 @@ export default ({ data }) => (
     <div class="container">
       <div class="row">
         <div class="col-lg-5 mb-3">
-          <h2 class="mb-4 h1 text-white">Announcement</h2>
+          <h2 class="mb-4 h1 text-white" id="ssnews">Announcement</h2>
           <div class="card">
             <img src="https://source.unsplash.com/collection/7008843/500x300" class="card-img-top img-fluid" alt="..." />
             <div class="card-body">
@@ -134,7 +134,7 @@ export default ({ data }) => (
               <a href={node.data.URL} class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer"><span class="font-weight-bold">{node.data.Name}</span><br /><small>{node.data.Date} | {node.data.Source}</small></a>
               ))}
           </div>
-          <h3 class="mt-3 text-right"><a href="news" class="badge badge-danger">See all news</a></h3>
+          <h3 class="mt-3 text-right"><a href="news" class="btn btn-danger">See all news</a></h3>
         </div>
       </div>
     </div>
@@ -274,15 +274,27 @@ export default ({ data }) => (
 
 {/* quotes */}
   <div class="container py-5">
-      <h2 class="mb-4 text-dark h1" id="quotes">Testimonials</h2>
+      <h2 class="mb-4 text-dark h1" id="ssquotes">Testimonials</h2>
       <div class="row">
           <div class="col-lg mb-4">
-              <i class="fas fa-quote-left fa-2x fa-pull-left text-green"></i>
+              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
               <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p class="text-dark">&mdash; Jane Doe</p>
           </div>
           <div class="col-lg">
-              <i class="fas fa-quote-left fa-2x fa-pull-left text-primary"></i>
+              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
+              <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p class="text-dark">&mdash; Jane Doe</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg mb-4">
+              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
+              <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p class="text-dark">&mdash; Jane Doe</p>
+          </div>
+          <div class="col-lg">
+              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
               <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p class="text-dark">&mdash; Jane Doe</p>
           </div>

@@ -10,23 +10,31 @@ export default () => (
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item mr-2">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="#ssnews">News</a>
             </li>
-            <li class="nav-item dropdown mr-2">
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="#ssabout">About</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="#ssprograms">Programs</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="#ssquotes">Testimonials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sscontact">Contact</a>
+            </li>
+            <li class="nav-item dropdown mr-2 ml-4">
                 <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Programs
+                    Explore Further
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="camp">Brain Camp</a>
                     <a class="dropdown-item" href="academy">Brain Academy</a>
                     <a class="dropdown-item" href="lab">Brain Lab</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="history">History</a>
                 </div>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="history">History</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#sscontact">Contact</a>
             </li>
         </ul>
         <form class="form-inline pl-lg-5 mt-2 mt-lg-0">

@@ -72,6 +72,9 @@ h2[id] {
   background-color: var(--purple);
 }
 
+.text-yellow {
+  color: var(--yellow);
+}
 .text-green {
   color: var(--green);
 }
