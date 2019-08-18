@@ -60,12 +60,12 @@ export default ({ data }) => (
 </Helmet>
 <Layout>
 {/* alert */}
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-9 mx-auto">
-              <div class="alert alert-danger alert-dismissible fade show my-3" role="alert">
-                  <strong>Hurry!</strong> Summer Camp Session 3 (RC Car) is starting in two week! <a href="#home" target="_blank" class="alert-link">Register now</a>! <span class="badge badge-danger ml-4">2 spots left</span>
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <div className="container">
+      <div className="row">
+          <div className="col-lg-9 mx-auto">
+              <div className="alert alert-danger alert-dismissible fade show my-3" role="alert">
+                  <strong>Hurry!</strong> Summer Camp Session 3 (RC Car) is starting in two week! <a href="#home" target="_blank" className="alert-link">Register now</a>! <span className="badge badge-danger ml-4">2 spots left</span>
+                  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
               </div>
@@ -75,10 +75,10 @@ export default ({ data }) => (
 {/* /alert */}
 
 {/* jumbotron */}
-  <div class="jumbotron jumbotron-fluid bg-dark text-white d-xl-none mb-0">
-      <div class="container text-center py-5">
+  <div className="jumbotron jumbotron-fluid bg-dark text-white d-xl-none mb-0">
+      <div className="container text-center py-5">
           <h1>Get with the Program</h1>
-          <div class="lead" dangerouslySetInnerHTML={{
+          <div className="lead" dangerouslySetInnerHTML={{
         __html: data.tagline.data.Text.childMarkdownRemark.html,
       }} />
       </div>
@@ -86,100 +86,110 @@ export default ({ data }) => (
 {/* /jumbotron */}
 
 {/* carousel */}
-  <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade d-none d-xl-block" data-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://source.unsplash.com/collection/6882791/1800x550" class="d-block w-100" alt="..."></img>
-            <div class="carousel-caption">
-                <h1 class="display-2">Get with the Program</h1>
-                <div class="lead" dangerouslySetInnerHTML={{
+  <div id="carouselExampleSlidesOnly" className="carousel slide carousel-fade d-none d-xl-block" data-ride="carousel">
+      <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="https://source.unsplash.com/collection/6882791/1800x550" className="d-block w-100" alt="..."></img>
+            <div className="carousel-caption">
+                <h1 className="display-2">Get with the Program</h1>
+                <div className="lead" dangerouslySetInnerHTML={{
         __html: data.tagline.data.Text.childMarkdownRemark.html,
       }} />
             </div>
           </div>
-          <div class="carousel-item">
-              <img src="https://source.unsplash.com/1800x550/?technology" class="d-block w-100" alt="..."></img>
+          <div className="carousel-item">
+              <img src="https://source.unsplash.com/1800x550/?technology" className="d-block w-100" alt="..."></img>
           </div>
-          <div class="carousel-item">
-              <img src="https://source.unsplash.com/1800x550/?engineering" class="d-block w-100" alt="..."></img>
+          <div className="carousel-item">
+              <img src="https://source.unsplash.com/1800x550/?engineering" className="d-block w-100" alt="..."></img>
           </div>
-          <div class="carousel-item">
-              <img src="https://source.unsplash.com/1800x550/?math" class="d-block w-100" alt="..."></img>
+          <div className="carousel-item">
+              <img src="https://source.unsplash.com/1800x550/?math" className="d-block w-100" alt="..."></img>
           </div>
       </div>
   </div>
 {/* /carousel */}
 
 {/* news */}
-<div class="py-5 bg-blue">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 mb-3">
-          <h2 class="mb-4 h1 text-white" id="ssnews">Announcement</h2>
-          <div class="card">
-            <img src="https://source.unsplash.com/collection/7008843/500x300" class="card-img-top img-fluid" alt="..." />
-            <div class="card-body">
-            <h5 class="card-title">Upcoming Camps</h5>
-            <p class="card-text">July 8–12: Build Your Own Robot<br />July 22–26: Coding Camp<br />August 12–16: Remote Control Car DIY<br /><small class="text-danger font-weight-bold">9:30 a.m. to 4 p.m. (Add-on option until 5 p.m. is available)</small></p>
-            <a href="https://summer-19.paperform.co/" class="btn btn-primary" aria-label="Read more about the camps and register" target="_blank" rel="noopener noreferrer">Read More and Register</a>
+<div className="py-5 bg-blue">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-5 mb-3">
+          <h2 className="mb-4 h1 text-white" id="ssnews">Announcement</h2>
+          <div className="card">
+            <img src="https://source.unsplash.com/collection/7008843/500x300" className="card-img-top img-fluid" alt="..." />
+            <div className="card-body">
+            <h5 className="card-title">Upcoming Camps</h5>
+            <p className="card-text">July 8–12: Build Your Own Robot<br />July 22–26: Coding Camp<br />August 12–16: Remote Control Car DIY<br /><small className="text-danger font-weight-bold">9:30 a.m. to 4 p.m. (Add-on option until 5 p.m. is available)</small></p>
+            <a href="https://summer-19.paperform.co/" className="btn btn-primary" aria-label="Read more about the camps and register" target="_blank" rel="noopener noreferrer">Read More and Register</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-7">
-          <h2 class="mb-4 h1 text-white">
+        <div className="col-lg-7">
+          <h2 className="mb-4 h1 text-white">
               In the News
           </h2>
-          <div class="list-group">
+          <div className="list-group">
               {data.news.nodes.map(node => (
-              <a href={node.data.URL} class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer"><span class="font-weight-bold">{node.data.Name}</span><br /><small>{node.data.Date} | {node.data.Source}</small></a>
+              <a href={node.data.URL} className="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer"><span className="font-weight-bold">{node.data.Name}</span><br /><small>{node.data.Date} | {node.data.Source}</small></a>
               ))}
           </div>
-          <h3 class="mt-3 text-right"><a href="news" class="btn btn-danger">See all news</a></h3>
+          <h3 className="mt-3 text-right"><a href="news" className="btn btn-danger">See all news</a></h3>
         </div>
       </div>
     </div>
 </div>
 {/* /news */}
 
+{/* wave */}
+<div className="wave">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2AABCC" fill-opacity="1" d="M0,192L40,186.7C80,181,160,171,240,165.3C320,160,400,160,480,170.7C560,181,640,203,720,202.7C800,203,880,181,960,160C1040,139,1120,117,1200,112C1280,107,1360,117,1400,122.7L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+</div>
+{/* /wave */}
+
 {/* about */}
-  <div class="container py-5">
-      <div class="row">
-          <div class="col-lg mb-3">
-              <h2 class="mb-4 h1" id="ssabout">
-                  About
-              </h2>
-              <p class="text-muted text-justify">
-              Get with the Program is a nonprofit organization that promotes and reinforces literacy in science, technology, engineering, and mathematics &#40;STEM&#41; from preschool through 12th grade. While our focus is on STEM, we take the holistic approach to child development by incorporating art, music, physical education, and literacy &#40;language arts&#41; into STEM learning.
-              </p>
-          </div>
-          <div class="col-lg">
-              <h2 class="mb-4 h1">
-                  Mission
-              </h2>
-              <p class="text-muted text-justify">
-                  Suspendisse in elementum mi, ac sollicitudin sem. Mauris bibendum tellus ut hendrerit accumsan. Nulla sit amet rutrum ligula, id efficitur metus. Cras congue urna ac mi ullamcorper tempor. Pellentesque metus lorem, pharetra in risus in, facilisis bibendum ex. Fusce volutpat venenatis luctus. Praesent lacinia porta mauris, nec tempor nulla gravida non. Mauris convallis odio a odio porttitor, at congue tortor cursus. Suspendisse potenti. Pellentesque eget orci condimentum, mollis sapien at, porttitor felis. Vivamus tempus massa erat. Suspendisse lacus arcu, vulputate in elit nec, sagittis ornare eros.
-              </p>
-          </div>
-      </div>
-  </div>
-  {/* /about */}
+<div className="container py-5">
+    <div className="row">
+        <div className="col-lg mb-3">
+            <h2 className="mb-4 h1" id="ssabout">
+                About
+            </h2>
+            <p className="text-muted text-justify">
+            Get with the Program is a nonprofit organization that promotes and reinforces literacy in science, technology, engineering, and mathematics &#40;STEM&#41; from preschool through 12th grade. While our focus is on STEM, we take the holistic approach to child development by incorporating art, music, physical education, and literacy &#40;language arts&#41; into STEM learning.
+            </p>
+        </div>
+        <div className="col-lg">
+            <h2 className="mb-4 h1">
+                Mission
+            </h2>
+            <p className="text-muted text-justify">
+                Suspendisse in elementum mi, ac sollicitudin sem. Mauris bibendum tellus ut hendrerit accumsan. Nulla sit amet rutrum ligula, id efficitur metus. Cras congue urna ac mi ullamcorper tempor. Pellentesque metus lorem, pharetra in risus in, facilisis bibendum ex. Fusce volutpat venenatis luctus. Praesent lacinia porta mauris, nec tempor nulla gravida non. Mauris convallis odio a odio porttitor, at congue tortor cursus. Suspendisse potenti. Pellentesque eget orci condimentum, mollis sapien at, porttitor felis. Vivamus tempus massa erat. Suspendisse lacus arcu, vulputate in elit nec, sagittis ornare eros.
+            </p>
+        </div>
+    </div>
+</div>
+{/* /about */}
+
+{/* wave */}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#13AE6C" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,192C640,181,800,107,960,90.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+{/* /wave */}
 
 {/* founder */}
-  <div class="py-5 bg-green">
-      <div class="container">
-          <div class="row">
-              <figure class="figure col-lg mb-5 mb-lg-0">
-                      <img src="jason-williams.jpg" alt="Jason Williams and camp participants playing the banana piano" class="rounded img-fluid figure-img" />
-                      <figcaption class="figure-caption text-white">Photo credit: Yevhen Gulenko</figcaption>
+  <div className="py-5 bg-green">
+      <div className="container">
+          <div className="row">
+              <figure className="figure col-lg mb-5 mb-lg-0">
+                      <img src="jason-williams.jpg" alt="Jason Williams and camp participants playing the banana piano" className="rounded img-fluid figure-img" />
+                      <figcaption className="figure-caption text-white">Photo credit: Yevhen Gulenko</figcaption>
               </figure>
-              <div class="col-lg text-white">
-                  <h2 class="h1" id="founder">
+              <div className="col-lg text-white">
+                  <h2 className="h1" id="founder">
                       Jason Williams
                   </h2>
-                  <p class="font-weight-bold">
+                  <p className="font-weight-bold">
                       CEO/Founder
                   </p>
-                  <p class="mb-4 text-justify">
+                  <p className="mb-4 text-justify">
                   Jason Williams, the Founder and CEO of Get with the Program, is a Lorain, OH native and Oberlin College graduate with extensive experience in working with P-12 students, both domestically and internationally. Mr. Williams enjoys learning new things, solving problems, and inspiring youth to reach their fullest potential.
                   </p>
               </div>
@@ -188,43 +198,47 @@ export default ({ data }) => (
   </div>
 {/* /founder */}
 
+{/* wave */}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#13AE6C" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,192C640,181,800,107,960,90.7C1120,75,1280,117,1360,138.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+{/* /wave */}
+
 {/* team */}
-  <div class="container py-5">
-      <h2 class="mb-5 h1" id="team">Our Characters</h2>
-      <div class="row">
-          <div class="col-lg text-center text-dark mb-3">
-              <img src="amina.png" alt="Amina" class="rounded-circle"></img>
-              <h3 class="mt-4">
+  <div className="container py-5">
+      <h2 className="mb-5 h1" id="team">Our Characters</h2>
+      <div className="row">
+          <div className="col-lg text-center text-dark mb-3">
+              <img src="amina.png" alt="Amina" className="rounded-circle"></img>
+              <h3 className="mt-4">
                   Amina
               </h3>
-              <p class="font-weight-bold">
+              <p className="font-weight-bold">
                   Professional Title
               </p>
-              <p class="text-muted">
+              <p className="text-muted">
                   Suspendisse in elementum mi, ac sollicitudin sem. Mauris bibendum tellus ut hendrerit accumsan. Nulla sit amet rutrum ligula, id efficitur metus. Cras congue urna ac mi ullamcorper tempor.
               </p>
           </div>
-          <div class="col-lg text-center text-dark mb-3">
-              <img src="amir.png" alt="Amir" class="rounded-circle"></img>
-              <h3 class="mt-4">
+          <div className="col-lg text-center text-dark mb-3">
+              <img src="amir.png" alt="Amir" className="rounded-circle"></img>
+              <h3 className="mt-4">
                   Amir
               </h3>
-              <p class="font-weight-bold">
+              <p className="font-weight-bold">
                   Professional Title
               </p>
-              <p class="text-muted">
+              <p className="text-muted">
                   Suspendisse in elementum mi, ac sollicitudin sem. Mauris bibendum tellus ut hendrerit accumsan. Nulla sit amet rutrum ligula, id efficitur metus. Cras congue urna ac mi ullamcorper tempor.
               </p>
           </div>
-          <div class="col-lg text-center text-dark">
-              <img src="anissa.png" alt="Anissa" class="rounded-circle"></img>
-              <h3 class="mt-4">
+          <div className="col-lg text-center text-dark">
+              <img src="anissa.png" alt="Anissa" className="rounded-circle"></img>
+              <h3 className="mt-4">
                   Anissa
               </h3>
-              <p class="font-weight-bold">
+              <p className="font-weight-bold">
                   Professional Title
               </p>
-              <p class="text-muted">
+              <p className="text-muted">
                   Suspendisse in elementum mi, ac sollicitudin sem. Mauris bibendum tellus ut hendrerit accumsan. Nulla sit amet rutrum ligula, id efficitur metus. Cras congue urna ac mi ullamcorper tempor.
               </p>
           </div>
@@ -232,40 +246,44 @@ export default ({ data }) => (
   </div>
 {/* /team */}
 
+{/* wave */}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8962D8" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,186.7C640,203,800,245,960,261.3C1120,277,1280,267,1360,261.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+{/* /wave */}
+
 {/* programs */}
-  <div class="bg-purple py-5">
-      <div class="container text-white">
-          <h2 class="mb-5 h1" id="ssprograms">Programs</h2>
-          <div class="row">
-              <div class="col-md-9 mx-auto col-xl mb-5">
-                  <img src="https://source.unsplash.com/collection/7019254/600x400" alt="Brain Camp" class="rounded img-fluid"></img>
-                  <h3 class="mt-4">
+  <div className="bg-purple py-5">
+      <div className="container text-white">
+          <h2 className="mb-5 h1" id="ssprograms">Programs</h2>
+          <div className="row">
+              <div className="col-md-9 mx-auto col-xl mb-5">
+                  <img src="https://source.unsplash.com/collection/7019254/600x400" alt="Brain Camp" className="rounded img-fluid"></img>
+                  <h3 className="mt-4">
                       Brain Camp
                   </h3>
-                  <p class="text-justify">
+                  <p className="text-justify">
                   Get with the Program&rsquo;s Brain Camps are year-round, out-of-school learning programs. These camps take place during school in-service days, holidays, and school breaks &#40;spring, summer, winter, etc.&#41;.
                   </p>
-                  <a class="btn btn-primary mt-2" href="camp">Learn More</a>
+                  {/* <a className="btn btn-primary mt-2" href="camp">Learn More</a> */}
               </div>
-              <div class="col-md-9 mx-auto col-xl mb-5">
-                  <img src="https://source.unsplash.com/collection/4255424/600x400" alt="Brain Academy" class="rounded img-fluid"></img>
-                  <h3 class="mt-4">
+              <div className="col-md-9 mx-auto col-xl mb-5">
+                  <img src="https://source.unsplash.com/collection/4255424/600x400" alt="Brain Academy" className="rounded img-fluid"></img>
+                  <h3 className="mt-4">
                       Brain Academy
                   </h3>
-                  <p class="text-justify">
+                  <p className="text-justify">
                   The Brain Academy is an onsite afterschool program that works to improve students&rsqup; problem solving/critical thinking skills and attitude towards STEM, through various hands-on, project-based STEM activities.
                   </p>
-                  <a class="btn btn-primary mt-2" href="program.html">Learn More</a>
+                  {/* <a className="btn btn-primary mt-2" href="academy">Learn More</a> */}
               </div>
-              <div class="col-md-9 mx-auto col-xl">
-                  <img src="https://source.unsplash.com/collection/8262090/600x400" alt="Brain Lab" class="rounded img-fluid"></img>
-                  <h3 class="mt-4">
+              <div className="col-md-9 mx-auto col-xl">
+                  <img src="https://source.unsplash.com/collection/8262090/600x400" alt="Brain Lab" className="rounded img-fluid"></img>
+                  <h3 className="mt-4">
                       Brain Lab
                   </h3>
-                  <p class="text-justify">
+                  <p className="text-justify">
                   The Brain Lab offers similar activities, in partnership with youth-serving organizations.
                   </p>
-                  <a class="btn btn-primary mt-2" href="program.html">Learn More</a>
+                  {/* <a className="btn btn-primary mt-2" href="lab">Learn More</a> */}
               </div>
           </div>
       </div>
@@ -273,33 +291,33 @@ export default ({ data }) => (
 {/* /programs */}
 
 {/* quotes */}
-  <div class="container py-5">
-      <h2 class="mb-4 text-dark h1" id="ssquotes">Testimonials</h2>
-      <div class="row">
-          <div class="col-lg mb-4">
-              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
-              <p class="text-dark">&mdash; Jane Doe</p>
+  {/* <div className="container py-5">
+      <h2 className="mb-4 text-dark h1" id="ssquotes">Testimonials</h2>
+      <div className="row">
+          <div className="col-lg mb-4">
+              <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
+              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-dark">&mdash; Jane Doe</p>
           </div>
-          <div class="col-lg">
-              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
-              <p class="text-dark">&mdash; Jane Doe</p>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-lg mb-4">
-              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
-              <p class="text-dark">&mdash; Jane Doe</p>
-          </div>
-          <div class="col-lg">
-              <i class="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p class="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
-              <p class="text-dark">&mdash; Jane Doe</p>
+          <div className="col-lg">
+              <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
+              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-dark">&mdash; Jane Doe</p>
           </div>
       </div>
-  </div>
+      <div className="row">
+          <div className="col-lg mb-4">
+              <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
+              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-dark">&mdash; Jane Doe</p>
+          </div>
+          <div className="col-lg">
+              <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
+              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-dark">&mdash; Jane Doe</p>
+          </div>
+      </div>
+  </div> */}
 {/* /quotes */}
 </Layout>
 </div>

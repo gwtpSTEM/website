@@ -32,7 +32,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Quicksand\:400,700`
+          `Quicksand\:400,700`,
+          `M PLUS Rounded 1c\:400,700`
         ],
         display: 'swap'
       }

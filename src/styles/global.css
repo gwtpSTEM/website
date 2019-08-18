@@ -16,11 +16,21 @@
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'M PLUS Rounded 1c', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
   font-weight: 700;
+}
+
+.fa-heart {
+  color: var(--pink);
+}
+
+.fa-globe-americas, .fa-globe-asia {
+  --fa-secondary-opacity: 0.5;
+  --fa-primary-color: var(--green);
+  --fa-secondary-color: var(--blue);
 }
 
 .jumbotron {
@@ -52,6 +62,10 @@ h2[id] {
   padding-top: 110px;
   margin-top: -110px;
 }
+
+/* .wave {
+  margin-bottom: -70px;
+} */
 
 .bg-pink {
   background-color: var(--pink);
