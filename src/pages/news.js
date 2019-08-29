@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from 'gatsby';
-import Layout from '../components/layout-index'
+import Layout from '../components/layout-sub'
 
 export const query = graphql`
   {
@@ -22,17 +22,6 @@ export const query = graphql`
 export default ({ data }) => (
 <Layout>
     <div>
-       {/* breadcrumb */}
-        <div class="container">
-           <nav aria-label="breadcrumb">
-               <ol class="breadcrumb mb-0 bg-white pl-0">
-                   <li class="breadcrumb-item"><a href="/">Home</a></li>
-                   <li class="breadcrumb-item active" aria-current="page">In the News</li>
-               </ol>
-           </nav>
-        </div>
-       {/* /breadcrumb */}
-       
        {/* news-list */}
         <div class="container py-5">
             <h1 class="mb-4">In the News</h1>

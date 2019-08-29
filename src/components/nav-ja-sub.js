@@ -3,34 +3,34 @@ import React from "react";
 export default () => (
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2 border-bottom">
 <div class="container">
-    <a class="navbar-brand" href="/"><img src="../gwtp-logo.png" alt="" width="120"></img></a>
+    <a class="navbar-brand" href="/ja"><img src="../../gwtp-logo.png" alt="" width="120"></img></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item mr-2">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/ja">ホーム</a>
             </li>
             {/* <li class="nav-item dropdown mr-2">
                 <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Explore Further
+                    さらに詳しく
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/camp">Brain Camp</a>
-                    <a class="dropdown-item" href="/academy">Brain Academy</a>
-                    <a class="dropdown-item" href="/lab">Brain Lab</a>
+                    <a class="dropdown-item" href="/camp">ブレイン・キャンプ</a>
+                    <a class="dropdown-item" href="/academy">ブレイン・アカデミー</a>
+                    <a class="dropdown-item" href="/lab">ブレイン・ラボ</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/history">History</a>
+                    <a class="dropdown-item" href="/history">これまでの活動</a>
                 </div>
             </li> */}
             <li class="nav-item">
-                <a class="nav-link" href="#sscontact">Contact</a>
+                <a class="nav-link" href="#sscontact">お問い合わせ</a>
             </li>
         </ul>
-        <form class="form-inline pl-lg-5 mt-2 mt-lg-0">
-        <a  href="http://store.gwtp.us/" class="btn btn-danger font-weight-bolder" target="_blank" rel="noopener noreferrer">Donate</a>
-        </form>
+        {/* <form class="form-inline pl-lg-5 mt-2 mt-lg-0">
+        <a  href="http://store.gwtp.us/" class="btn btn-danger font-weight-bolder" target="_blank" rel="noopener noreferrer">寄付</a>
+        </form> */}
     </div>
 </div>
 </nav>

@@ -19,6 +19,23 @@ body {
   font-family: 'Quicksand', 'M PLUS Rounded 1c', sans-serif;
 }
 
+/* Remove 1px gap between wave and section bg */
+
+.founder {
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.news {
+  margin-bottom: -1px;
+}
+
+.program {
+  margin-top: -1px;
+}
+
+/* /Remove 1px gap between wave and section bg */
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
   font-weight: 700;
 }
@@ -31,6 +48,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
   --fa-secondary-opacity: 0.5;
   --fa-primary-color: var(--green);
   --fa-secondary-color: var(--blue);
+}
+
+img.hero {
+  max-height: 500px;
+  object-fit: cover;
 }
 
 .jumbotron {
@@ -63,10 +85,6 @@ h2[id] {
   margin-top: -110px;
 }
 
-/* .wave {
-  margin-bottom: -70px;
-} */
-
 .bg-pink {
   background-color: var(--pink);
 }
@@ -91,6 +109,9 @@ h2[id] {
 }
 .text-green {
   color: var(--green);
+}
+.text-blue {
+  color: var(--blue);
 }
 
 /* white social icons */
