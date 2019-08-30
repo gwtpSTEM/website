@@ -7,7 +7,7 @@ export default () => (
             <div class="col-lg-6 ml-auto text-white order-lg-2 mb-5">
                 <h2 class="mb-4" id="sscontact">お問い合わせ</h2>
                 <form name="contact-ja" netlify-honeypot="bot-field" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="contact-ja" />
                     <div class="form-group d-none">
                     <label>何も記入しないでください:<input name="bot-field" /></label>
                     </div>
