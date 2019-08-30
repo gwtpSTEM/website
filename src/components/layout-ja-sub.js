@@ -1,7 +1,7 @@
 import React from "react"
 
 import Navbar from "./nav-ja-sub"
-import Footer from "./footer"
+import Footer from "./footer-ja"
 
 const Layout = ({ children }) => (
   <>
