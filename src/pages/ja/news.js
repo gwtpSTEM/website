@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"
 import { graphql } from 'gatsby';
 import Layout from '../../components/layout-ja-sub'
 
@@ -20,6 +21,24 @@ export const query = graphql`
 `;
 
 export default ({ data }) => (
+<div>
+<Helmet>
+<title>News</title>
+<meta name="title" content="メディア掲載情報 | Get with the Program" />
+<meta name="description" content="Get with the Programは幼稚園から高校生までのSTEM教育を推進します" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.gwtp.us/ja/news" />
+<meta property="og:title" content="メディア掲載情報 | Get with the Program" />
+<meta property="og:description" content="Get with the Programは幼稚園から高校生までのSTEM教育を推進します" />
+<meta property="og:image" content="https://www.gwtp.us/og.jpg" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.gwtp.us/ja/news" />
+<meta property="twitter:title" content="メディア掲載情報 | Get with the Program" />
+<meta property="twitter:description" content="Get with the Programは幼稚園から高校生までのSTEM教育を推進します" />
+<meta property="twitter:image" content="https://www.gwtp.us/og.jpg" />
+</Helmet>
 <Layout>
     <div>
        {/* news-list */}
@@ -34,5 +53,6 @@ export default ({ data }) => (
        {/* /news-list */}
    </div>
 </Layout>
+</div>
 )
    

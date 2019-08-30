@@ -29,16 +29,16 @@ export default ({ data }) => (
 <meta name="description" content="Get with the Programは幼稚園から高校生までのSTEM教育を推進します" />
 
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.gwtp.us/" />
+<meta property="og:url" content="https://www.gwtp.us/ja" />
 <meta property="og:title" content="Get with the Program: アメリカ・オハイオ州のSTEM教育専門NPO団体" />
 <meta property="og:description" content="Get with the Programは幼稚園から高校生までのSTEM教育を推進します" />
-<meta property="og:image" content="https://www.gwtp.us/og.png" />
+<meta property="og:image" content="https://www.gwtp.us/og.jpg" />
 
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://www.gwtp.us/" />
+<meta property="twitter:url" content="https://www.gwtp.us/ja" />
 <meta property="twitter:title" content="Get with the Program:  アメリカ・オハイオ州のSTEM教育専門NPO団体" />
 <meta property="twitter:description" content="Get with the Programは幼稚園から高校生までのSTEM教育を推進します" />
-<meta property="twitter:image" content="https://www.gwtp.us/og.png" />
+<meta property="twitter:image" content="https://www.gwtp.us/og.jpg" />
 </Helmet>
 <Layout>
 {/* alert */}
@@ -98,7 +98,7 @@ export default ({ data }) => (
           <div className="card text-dark">
             <img src="https://source.unsplash.com/collection/8525904/500x300" className="card-img-top img-fluid" alt="" />
             <div className="card-body">
-            <h5 className="card-title">東京・赤坂で英語STEM教室を開催！<br />(通訳同伴)</h5>
+            <h3 className="card-title h5">東京・赤坂で英語STEM教室を開催！<br />(通訳同伴)</h3>
             <p className="card-text">9月14日(土)暗号ブレスレットを作ろう<br />9月21日(土)オリジナルミニ懐中電灯を作ろう<br /><small className="text-danger font-weight-bold">場所: 港区赤坂4-2-3 赤坂コークス5階<br />時間: 午前9時半〜11時半<br />対象: 小学1年生〜6年生<br />費用: ¥5,000 (税・材料費込)</small></p>
             <a href="https://airtable.com/shrnzDZ1VxVrNc1YO" className="btn btn-primary" aria-label="STEM教室の詳しい内容と登録フォームはこちら" target="_blank" rel="noopener noreferrer">参加申し込みフォームへ</a>
             </div>

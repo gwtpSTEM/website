@@ -50,13 +50,13 @@ export default ({ data }) => (
 <meta property="og:url" content="https://www.gwtp.us/" />
 <meta property="og:title" content="Get with the Program: STEM Education in Oberlin, OH" />
 <meta property="og:description" content="Get with the Program promotes and reinforces STEM literacy among P-12 students." />
-<meta property="og:image" content="https://www.gwtp.us/og.png" />
+<meta property="og:image" content="https://www.gwtp.us/og.jpg" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://www.gwtp.us/" />
 <meta property="twitter:title" content="Get with the Program: STEM Education in Oberlin, OH" />
 <meta property="twitter:description" content="Get with the Program promotes and reinforces STEM literacy among P-12 students." />
-<meta property="twitter:image" content="https://www.gwtp.us/og.png" />
+<meta property="twitter:image" content="https://www.gwtp.us/og.jpg" />
 </Helmet>
 <Layout>
 {/* alert */}
@@ -115,7 +115,7 @@ export default ({ data }) => (
           <div className="card">
             <img src="https://source.unsplash.com/collection/7008843/500x300" className="card-img-top img-fluid" alt="" />
             <div className="card-body">
-            <h5 className="card-title">Fall Program Dates</h5>
+            <h3 className="card-title h5">Fall Program Dates</h3>
             <p className="card-text">Check back soon for dates, or subscribe to our newsletter!</p>
             <a href="http://eepurl.com/bPGvNr" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Join Our Mailing List</a>
             </div>

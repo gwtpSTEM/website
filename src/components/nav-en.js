@@ -3,7 +3,7 @@ import React from "react";
 export default () => (
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2 border-bottom">
 <div class="container">
-    <a class="navbar-brand" href="/"><img src="../gwtp-logo.png" alt="" width="120"></img></a>
+    <a class="navbar-brand" href="/"><img src="../gwtp-logo.png" alt="Get with the Program" width="120"></img></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
