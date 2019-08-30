@@ -133,7 +133,7 @@ export default ({ data }) => (
             <h2 className="mb-4" id="ssabout">
                 私たちについて
             </h2>
-            <p className="text-muted text-justify">
+            <p className="text-muted">
             Get with the Program (GwtP) は幼稚園から高校生までの子供たちにSTEM教育を広める活動をアメリカ・オハイオ州を中心に行っているNPO団体です。図画工作、音楽、体育、読み書きなどの要素も取り入れた総合的なアプローチでSTEM教育に取り組むことで、興味や関心の異なるすべての子供たちに楽しんでもらえるプログラムを提供します。
             </p>
         </div>
@@ -168,7 +168,7 @@ export default ({ data }) => (
                   <p className="font-weight-bold">
                       代表/創設者
                   </p>
-                  <p className="mb-4 text-justify">
+                  <p className="mb-4">
                   Get with the Programの代表であり創設者。アメリカ・オハイオ州ロレイン市生まれ。リベラルアールの名門オーバリン大学卒業は、アメリカ国内外において幅広い年齢の子どもたちの教育活動に携わっている。
                   </p>
               </div>
@@ -239,7 +239,7 @@ export default ({ data }) => (
                   <h3 className="mt-4">
                       ブレイン・キャンプ
                   </h3>
-                  <p className="text-justify">
+                  <p>
                   休日をはじめ、春休み・夏休み・冬休みといった長期休暇中に行っている通年プログラム。過去にはNASA職員を招いた宇宙キャンプや、地域の大学教授による脳科学・地質学・光学キャンプのほか、ロボットの組み立てからプログラミングまでを行うロボット工学キャンプ、オリジナルのゲームをデザインするコーディングキャンプなど多彩なプログラムを実施。
                   </p>
                   {/* <a className="btn btn-primary mt-2" href="camp">Learn More</a> */}
@@ -249,7 +249,7 @@ export default ({ data }) => (
                   <h3 className="mt-4">
                       ブレイン・アカデミー
                   </h3>
-                  <p className="text-justify">
+                  <p>
                   プロジェクトベースかつ体験型のSTEMアクティビティをとおし、問題を解く力や物事を色々な角度から考える力、STEM分野への興味・関心を養うプログラム。放課後に学校内の施設を利用して行われる。過去には、紙に書いた線を辿って走るロボットOzobotを使用した授業や、パソコンにバナナや粘土など身近なものをつなげて簡易電子ピアノやゲームを作れるMakey Makeyを使った授業を実施。
                   </p>
                   {/* <a className="btn btn-primary mt-2" href="academy">Learn More</a> */}
@@ -259,7 +259,7 @@ export default ({ data }) => (
                   <h3 className="mt-4">
                       ブレイン・ラボ
                   </h3>
-                  <p className="text-justify">
+                  <p>
                   学童保育や児童館などの教育機関外で不定期に行われるプログラム。過去には、ビーズやカードゲームを使いプログラミングの基礎である二進法の授業やHTML/CSSによるウェブサイト作成のほか、アカデミーでも利用されているOzobotやMakey Makeyを使用した授業を展開。
                   </p>
                   {/* <a className="btn btn-primary mt-2" href="lab">Learn More</a> */}
@@ -275,24 +275,24 @@ export default ({ data }) => (
       <div className="row">
           <div className="col-lg mb-4">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
           <div className="col-lg">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
       </div>
       <div className="row">
           <div className="col-lg mb-4">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
           <div className="col-lg">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
       </div>

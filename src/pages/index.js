@@ -150,7 +150,7 @@ export default ({ data }) => (
             <h2 className="mb-4 h1" id="ssabout">
                 About
             </h2>
-            <p className="text-muted text-justify">
+            <p className="text-muted">
             Get with the Program is a 501&#40;c&#41;&#40;3&#41; nonprofit organization that promotes and reinforces literacy in science, technology, engineering, and mathematics &#40;STEM&#41; among preschool through 12th grade, with a particular focus on underrepresented groups and marginalized communities. While our focus is on STEM, we take the holistic approach to child development by incorporating art, music, physical education, and literacy &#40;language arts&#41; into STEM learning.
             </p>
         </div>
@@ -185,7 +185,7 @@ export default ({ data }) => (
                   <p className="font-weight-bold">
                       CEO/Founder
                   </p>
-                  <p className="mb-4 text-justify">
+                  <p className="mb-4">
                   Jason Williams, the Founder and CEO of Get with the Program, is a Lorain, OH native and Oberlin College graduate with extensive experience in working with P-12 students, both domestically and internationally. Mr. Williams enjoys learning new things, solving problems, and empowering youth to reach their fullest potential.
                   </p>
               </div>
@@ -243,7 +243,7 @@ export default ({ data }) => (
 {/* /team */}
 
 {/* wave */}
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 140 1440 140"><path fill="#8962D8" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,186.7C640,203,800,245,960,261.3C1120,277,1280,267,1360,261.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 160 1440 120"><path fill="#8962D8" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,186.7C640,203,800,245,960,261.3C1120,277,1280,267,1360,261.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
 {/* /wave */}
 
 {/* programs */}
@@ -256,7 +256,7 @@ export default ({ data }) => (
                   <h3 className="mt-4">
                       Brain Camp
                   </h3>
-                  <p className="text-justify">
+                  <p>
                   Get with the Program&rsquo;s Brain Camps are year-round, out-of-school learning programs. These camps take place during school in-service days, holidays, and school breaks &#40;spring, summer, winter, etc.&#41;.
                   </p>
                   {/* <a className="btn btn-primary mt-2" href="camp">Learn More</a> */}
@@ -266,7 +266,7 @@ export default ({ data }) => (
                   <h3 className="mt-4">
                       Brain Academy
                   </h3>
-                  <p className="text-justify">
+                  <p>
                   The Brain Academy is an onsite afterschool program that works to improve students&rsquo; problem solving/critical thinking skills and attitude towards STEM, through various hands-on, project-based STEM activities.
                   </p>
                   {/* <a className="btn btn-primary mt-2" href="academy">Learn More</a> */}
@@ -276,7 +276,7 @@ export default ({ data }) => (
                   <h3 className="mt-4">
                       Brain Lab
                   </h3>
-                  <p className="text-justify">
+                  <p>
                   The Brain Lab offers similar activities, in partnership with youth-serving organizations.
                   </p>
                   {/* <a className="btn btn-primary mt-2" href="lab">Learn More</a> */}
@@ -292,24 +292,24 @@ export default ({ data }) => (
       <div className="row">
           <div className="col-lg mb-4">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
           <div className="col-lg">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
       </div>
       <div className="row">
           <div className="col-lg mb-4">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
           <div className="col-lg">
               <i className="fas fa-quote-left fa-2x fa-pull-left text-yellow"></i>
-              <p className="text-muted text-justify mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+              <p className="text-muted mb-1">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further... And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
               <p className="text-dark">&mdash; Jane Doe</p>
           </div>
       </div>
