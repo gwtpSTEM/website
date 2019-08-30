@@ -113,7 +113,7 @@ export default ({ data }) => (
               <a href={node.data.URL} className="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer"><span className="font-weight-bold">{node.data.Japanese}</span><br /><small>{node.data.Date} | {node.data.Source}</small></a>
               ))}
           </div>
-          <h3 className="mt-3 text-right"><a href="news" className="btn btn-danger">すべてのニュースを読む</a></h3>
+          <div className="text-right"><a href="news" className="btn btn-danger mt-3">すべてのニュースを読む</a></div>
         </div>
       </div>
     </div>
