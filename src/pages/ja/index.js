@@ -186,7 +186,7 @@ export default ({ data }) => (
       <h2 className="mb-5" id="team">キャラクター紹介</h2>
       <div className="row">
           <div className="col-lg text-center text-dark mb-3">
-              <img src="../amina.png" alt="Amina" className="rounded-circle"></img>
+              <img src="../amina.jpg" alt="Amina" className="rounded-circle"></img>
               <h3 className="mt-4">
                   アミーナ
               </h3>
@@ -198,7 +198,7 @@ export default ({ data }) => (
               </p> */}
           </div>
           <div className="col-lg text-center text-dark mb-3">
-              <img src="../amir.png" alt="Amir" className="rounded-circle"></img>
+              <img src="../amir.jpg" alt="Amir" className="rounded-circle"></img>
               <h3 className="mt-4">
                   アミール
               </h3>
@@ -210,7 +210,7 @@ export default ({ data }) => (
               </p> */}
           </div>
           <div className="col-lg text-center text-dark">
-              <img src="../anissa.png" alt="Anissa" className="rounded-circle"></img>
+              <img src="../anissa.jpg" alt="Anissa" className="rounded-circle"></img>
               <h3 className="mt-4">
                   アニーサ
               </h3>

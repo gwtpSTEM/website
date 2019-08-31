@@ -159,7 +159,7 @@ export default ({ data }) => (
                 Mission
             </h2>
             <p className="text-muted text-center h3">
-            “To empower <span className="text-blue">ALL</span> children<br />to reach their greatest potential!”
+            &ldquo;To empower <span className="text-blue">ALL</span> children<br />to reach their greatest potential!&rdquo;
             </p>
         </div>
     </div>
@@ -203,7 +203,7 @@ export default ({ data }) => (
       <h2 className="mb-5 h1" id="team">Our Characters</h2>
       <div className="row">
           <div className="col-lg text-center text-dark mb-3">
-              <img src="amina.png" alt="Amina" className="rounded-circle"></img>
+              <img src="amina.jpg" alt="Amina" className="rounded-circle"></img>
               <h3 className="mt-4">
                   Amina
               </h3>
@@ -215,7 +215,7 @@ export default ({ data }) => (
               </p> */}
           </div>
           <div className="col-lg text-center text-dark mb-3">
-              <img src="amir.png" alt="Amir" className="rounded-circle"></img>
+              <img src="amir.jpg" alt="Amir" className="rounded-circle"></img>
               <h3 className="mt-4">
                   Amir
               </h3>
@@ -227,7 +227,7 @@ export default ({ data }) => (
               </p> */}
           </div>
           <div className="col-lg text-center text-dark">
-              <img src="anissa.png" alt="Anissa" className="rounded-circle"></img>
+              <img src="anissa.jpg" alt="Anissa" className="rounded-circle"></img>
               <h3 className="mt-4">
                   Anissa
               </h3>

@@ -12,16 +12,16 @@ export default () => (
                     <label>Don’t fill this out if you're human:<input name="bot-field" /></label>
                     </div>
                     <div class="form-group">
-                        <label for="Name" class="sr-only">Your Name</label>
-                        <input type="text" class="form-control" name="Name" placeholder="Your Name" />
+                        <div id="nameId" class="sr-only">Your Name</div>
+                        <input type="text" class="form-control" aria-labelledby="nameId" placeholder="Your Name" />
                     </div>
                     <div class="form-group">
-                        <label for="Email" class="sr-only">Your Email</label>
-                        <input type="email" class="form-control" name="Email" placeholder="Your Email" />
+                        <div id="emailId" class="sr-only">Your Email</div>
+                        <input type="email" class="form-control" aria-labelledby="emailId" placeholder="Your Email" />
                     </div>
                     <div class="form-group">
-                        <label for="Message" class="sr-only"></label>
-                        <textarea type="text" class="form-control" name="Message" rows="5" placeholder="Message"></textarea>
+                        <div id="messageId" class="sr-only">Message</div>
+                        <textarea type="text" class="form-control" aria-labelledby="messageId" rows="5" placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-danger">Send</button>
                 </form>

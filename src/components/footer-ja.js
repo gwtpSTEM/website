@@ -12,15 +12,15 @@ export default () => (
                     <label>何も記入しないでください:<input name="bot-field" /></label>
                     </div>
                     <div class="form-group">
-                        <label for="Name" class="sr-only">お名前</label>
+                        <div id="nameId" class="sr-only">お名前</div>
                         <input type="text" class="form-control" name="Name" placeholder="お名前" />
                     </div>
                     <div class="form-group">
-                        <label for="Email" class="sr-only">メールアドレス</label>
+                        <div id="emailId" class="sr-only">メールアドレス</div>
                         <input type="email" class="form-control" name="Email" placeholder="メールアドレス" />
                     </div>
                     <div class="form-group">
-                        <label for="Message" class="sr-only">メッセージ</label>
+                        <div id="messageId" class="sr-only">メッセージ</div>
                         <textarea type="text" class="form-control" name="Message" rows="5" placeholder="メッセージ"></textarea>
                     </div>
                     <button type="submit" class="btn btn-danger">送信</button>
