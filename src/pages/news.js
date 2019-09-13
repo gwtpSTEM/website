@@ -32,6 +32,7 @@ export default ({ data }) => (
 <meta property="og:title" content="News | Get with the Program" />
 <meta property="og:description" content="Get with the Program promotes and reinforces STEM literacy among P-12 students." />
 <meta property="og:image" content="https://www.gwtp.us/og.jpg" />
+<meta property="fb:app_id" content="654619384642966" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://www.gwtp.us/news" />

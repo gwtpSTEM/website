@@ -33,6 +33,7 @@ export default ({ data }) => (
 <meta property="og:title" content="Get with the Program: アメリカ・オハイオ州のSTEM教育専門NPO団体" />
 <meta property="og:description" content="Get with the Programは幼稚園から高校生までのSTEM教育を推進します" />
 <meta property="og:image" content="https://www.gwtp.us/og.jpg" />
+<meta property="fb:app_id" content="654619384642966" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://www.gwtp.us/ja" />
@@ -46,8 +47,8 @@ export default ({ data }) => (
       <div className="row">
           <div className="col-lg-10 mx-auto">
               <div className="alert alert-danger alert-dismissible fade show my-3" role="alert">
-                  9月に東京・赤坂でSTEM教室を開催します！英語とSTEMを同時に学べるチャンス！ <a href="https://airtable.com/shrnzDZ1VxVrNc1YO" rel="noopener noreferrer" target="_blank" className="alert-link" aria-label="9月の英語STEM教室申し込みフォームへ"><strong>登録はこちらから！</strong></a> 
-                  {/* <span className="badge badge-danger ml-4">残り20席</span> */}
+                  9月21日（土）に東京・赤坂で英語も学べるSTEM教室を開催します！残席わずかですのでお早めにお申し込みください。 <a href="https://airtable.com/shrnzDZ1VxVrNc1YO" rel="noopener noreferrer" target="_blank" className="alert-link" aria-label="9月の英語STEM教室申し込みフォームへ"><strong>登録はこちらから！</strong></a> 
+                  <span className="badge badge-danger ml-4">残り9席</span>
                   <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
