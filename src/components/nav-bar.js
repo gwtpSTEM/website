@@ -30,7 +30,7 @@ export default () => (
             </li>
         </ul>
         <form class="form-inline pl-lg-5 mt-2 mt-lg-0">
-        <a  href="http://store.gwtp.us/" class="btn btn-danger font-weight-bolder" target="_blank" rel="noopener noreferrer">Donate</a>
+        <a  href="https://gwtp2020.square.site" class="btn btn-danger font-weight-bolder" target="_blank" rel="noopener noreferrer">Donate</a>
         </form>
     </div>
 </div>

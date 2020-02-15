@@ -38,7 +38,7 @@ export default () => (
             </li> */}
         </ul>
         {/* <form class="form-inline pl-lg-5 mt-2 mt-lg-0">
-        <a  href="http://store.gwtp.us/" class="btn btn-danger font-weight-bolder" target="_blank" rel="noopener noreferrer">寄付</a>
+        <a  href="https://gwtp2020.square.site" class="btn btn-danger font-weight-bolder" target="_blank" rel="noopener noreferrer">寄付</a>
         </form> */}
         <form class="form-inline pl-lg-4 mt-2 mt-lg-0">
         <a  href="/" class="btn btn-outline-dark font-weight-bolder"><span class="fad fa-globe-americas"></span> English</a>
