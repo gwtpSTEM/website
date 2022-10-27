@@ -1,5 +1,9 @@
 import React from "react"
 
+const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
 export default () => (
 <div class="bg-dark py-5">
     <div class="container">
@@ -35,7 +39,7 @@ export default () => (
                     </div>
                     <p class="lead mt-3">Stay up to date with the latest from Get with the Program!</p>
                     <a href="http://eepurl.com/bPGvNr" class="btn btn-danger mt-2 mb-3" target="_blank" rel="noopener noreferrer">Join Our Mailing List</a> */}
-                    <p class="mt-3">2021 &copy; Get with the Program, Inc.</p>
+                    <p class="mt-3">{getCurrentYear()} &copy; Get with the Program, Inc.</p>
                     <p class="pt-3 border-top border-white">Website designed and developed with <span class="fas fa-heart"></span><br />in Ohio by Arisa Williams</p>
                 </div>
             </div>
