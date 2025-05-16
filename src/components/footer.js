@@ -17,15 +17,15 @@ export default () => (
                     </div>
                     <div class="form-group">
                         <div id="nameId" class="sr-only">Your Name</div>
-                        <input type="text" class="form-control" name="Name" placeholder="Your Name" />
+                        <input type="text" class="form-control" name="Name" placeholder="Your Name" required />
                     </div>
                     <div class="form-group">
                         <div id="emailId" class="sr-only">Your Email</div>
-                        <input type="email" class="form-control" name="Email" placeholder="Your Email" />
+                        <input type="email" class="form-control" name="Email" placeholder="Your Email" required />
                     </div>
                     <div class="form-group">
                         <div id="messageId" class="sr-only">Message</div>
-                        <textarea type="text" class="form-control" name="Message" rows="5" placeholder="Message"></textarea>
+                        <textarea type="text" class="form-control" name="Message" rows="5" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-danger">Send</button>
                 </form>
